@@ -9,7 +9,7 @@ services:
       - key: PYTHON_VERSION
         value: "3.10"
     regions:
-      -oregon
+      - oregon
     plan: free
     autoDeploy: true
 
