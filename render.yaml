@@ -1,0 +1,15 @@
+#render.yaml
+services:
+  - type: web
+    name: house_price_predictor
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    envVars:
+      - key:PYTHON_VERSION
+        value:"3.10"
+    regions:
+      -oregon
+    plan: free
+    autoDeploy: true
+
