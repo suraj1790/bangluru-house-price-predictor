@@ -8,8 +8,6 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: "3.10"
-    regions:
-      - oregon
     plan: free
     autoDeploy: true
 
